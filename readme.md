@@ -154,3 +154,8 @@ RegisterNetEvent('hospital:client:RespawnAtHospital', function()
     end
     TriggerEvent("police:client:DeEscort")
 end)
+```
+
+## dependencies 
+
+[qb-ambulancejob](https://github.com/ExterCore/qb-ambulancejob)
