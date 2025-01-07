@@ -156,6 +156,8 @@ RegisterNetEvent('hospital:client:RespawnAtHospital', function()
 end)
 ```
 
+[preview](https://streamable.com/uthhrm)
+
 ## dependencies 
 
 [qb-ambulancejob](https://github.com/ExterCore/qb-ambulancejob)
