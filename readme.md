@@ -108,7 +108,7 @@ end)
 
 ## THEN CONTINUE TO qb-ambulancejob - client - main.lua and replace these two
 
-1. search for RegisterNetEvent('hospital:client:Revive, function() and replace this event with the one below
+## 1. search for RegisterNetEvent('hospital:client:Revive, function() and replace this event with the one below
 ```
 RegisterNetEvent('hospital:client:Revive', function()
     local player = PlayerPedId()
