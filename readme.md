@@ -3,9 +3,9 @@
 
 ## 1. Replace inside dead.lua (qb-ambulancejob > client > dead.lua) once done go to the buttom of this text and do the rest.
 
-emsNotified = false
+    emsNotified = false
 
-CreateThread(function()
+    CreateThread(function()
 	while true do
         local sleep = 1000
 		if isDead or InLaststand then
