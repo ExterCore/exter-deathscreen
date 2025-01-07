@@ -2,8 +2,8 @@
 
 
 ## 1. Replace inside dead.lua (qb-ambulancejob > client > dead.lua) once done go to the buttom of this text and do the rest.
-
-    emsNotified = false
+```
+emsNotified = false
 
     CreateThread(function()
 	while true do
@@ -104,12 +104,12 @@
         Wait(sleep)
 	end
 end)
-
+```
 
 ## THEN CONTINUE TO qb-ambulancejob - client - main.lua and replace these two
 
 1. search for RegisterNetEvent('hospital:client:Revive, function() and replace this event with the one below
-
+```
 RegisterNetEvent('hospital:client:Revive', function()
     local player = PlayerPedId()
 
@@ -142,10 +142,10 @@ RegisterNetEvent('hospital:client:Revive', function()
     QBCore.Functions.Notify(Lang:t('info.healthy'))
     TriggerEvent('exter-deathscreen:revive')
 end)
-
+```
 
 ## 2. look for RegisterNetEvent('hospital:client:RespawnAtHospital', function() and replace that whole event with the one below
-
+```
 RegisterNetEvent('hospital:client:RespawnAtHospital', function()
     TriggerEvent('exter-deathscreen:revive')
     TriggerServerEvent("hospital:server:RespawnAtHospital")
